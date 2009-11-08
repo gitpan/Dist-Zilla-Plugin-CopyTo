@@ -55,13 +55,15 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::Plugin::CopyTo - Also COPYTO plugin of Dist::Zilla
+Dist::Zilla::Plugin::CopyTo -  Copy to other places plugin for Dist::Zilla
 
 =head1 SYNOPSIS
 
-Used to copy the module to other directories. Typically useful when you have  local repositories
+Used to copy the updated module to other directories. You can specify more
+than one directory.
 
 	#dist.ini
+    [CopyTo]
 	dir = ~/git/Perl-Dist-Zilla-Plugin-CopyTo
 	dir = ~/svn/Perl-Dist-Zilla-Pulgin-CopyTo
 
