@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::CopyTo;
-our $VERSION = '0.05';
+our $VERSION = '0.11';
 
 use Moose;
 use File::Glob qw/:glob/;
@@ -7,6 +7,7 @@ use File::Glob qw/:glob/;
 with 'Dist::Zilla::Role::AfterBuild';
 
 has 'dir' => (
+    is      => 'ro',
     isa     => 'ArrayRef',
     default => sub { [] },
 );
